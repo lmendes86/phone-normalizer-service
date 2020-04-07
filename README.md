@@ -85,5 +85,5 @@ Local number from Argentina
 Quick start
 -----------
 
-1. Run `docker pull lmendes86/phone-normalizer-service:latest`
+1. Run `docker pull lmendes86/phone-normalizer-service:1.0.0`
 2. Run `docker run -p 80:80/tcp lmendes86/phone-normalizer-service`

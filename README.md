@@ -1,7 +1,7 @@
 phone-normalizer-service
 ========================
 
-Phone Normalizer Service is a Django based service which receive phone numnbers in many formats
+Phone Normalizer Service is a Django based service which receive phone numbers in many formats
 and convert them in standardize international format.
 It also gives extra information such as:
 * Number validation
@@ -48,7 +48,7 @@ International number from China
 }
 ```
 For Latin America the Service is more accurate allowing (for most of the countries) to  infer the area code if it's not
-sended as part of the parameters.
+sent as part of the parameters.
 
 This three examples are valid for Argentina:
 ```

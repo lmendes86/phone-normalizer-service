@@ -1,10 +1,9 @@
-========================
 phone-normalizer-service
 ========================
 
 Phone Normalizer Service is a Django based service which receive phone numnbers in many formats
 and convert them in standardize international format.
-It also gives extra information such as::
+It also gives extra information such as:
 * Number validation
 * country name and IATA code
 * Carrier data
@@ -19,7 +18,7 @@ It also gives extra information such as::
     * TP: Trunk prefix
     * IN: International Number
 
-Example requests::
+Example requests:
 ```
 International number from China
 // http://127.0.0.1/normalization/geo/?number=+86%2021%203323%206666
@@ -51,7 +50,7 @@ International number from China
 For Latin America the Service is more accurate allowing (for most of the countries) to  infer the area code if it's not
 sended as part of the parameters.
 
-This three examples are valid for Argentina::
+This three examples are valid for Argentina:
 ```
 Local number from Argentina
 // http://127.0.0.1/normalization/geo/?number=+541148910000

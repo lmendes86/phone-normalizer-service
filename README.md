@@ -87,3 +87,4 @@ Quick start
 
 1. Run `docker pull lmendes86/phone-normalizer-service:1.0.0`
 2. Run `docker run -p 80:80/tcp lmendes86/phone-normalizer-service:1.0.0`
+3. In the browser `http://127.0.0.1/normalization/geo/?number=+12345678910`

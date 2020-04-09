@@ -1,19 +1,15 @@
-FROM nginx:1.17.9
+FROM python:slim-buster
 
 MAINTAINER lmendes86 "lucasam86@gmail.com"
 WORKDIR /app
 
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
-	git \
-	python3 \
-	python3-dev \
-	python3-setuptools \
-	python3-pip \
+RUN apt update && \
+	apt upgrade -y && \
+	apt install -y \
+	nginx \
 	supervisor \
+	gcc \
 	sqlite3 && \
-	pip3 install -U pip setuptools && \
 	apt-get purge -y --auto-remove && \
     rm -rf /var/lib/apt/lists/*
 

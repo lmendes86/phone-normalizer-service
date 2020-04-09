@@ -124,8 +124,8 @@ def geo(request):
                     'carrier': tmpcarrier,
                     'type': number_type,
                     'dial_number': dial_number,
-                    'urbano': urbano,
-                    'linea': linea,
+                    'urban': urbano,
+                    'line': linea,
                     'is_posible': is_posible,
                     'ori_number': number,
                     'number_data': {

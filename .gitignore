@@ -1,6 +1,7 @@
 *.pyc
 *.log*
 **/.idea/*
+app/src/phone_normalizer_service/db.sqlite3
+db/dump_data.json
 env/phone_normalizer_service/*
 !env/phone_normalizer_service/requirements.txt
-src/phone_normalizer_service/db.sqlite3

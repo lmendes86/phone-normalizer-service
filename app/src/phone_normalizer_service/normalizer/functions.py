@@ -266,7 +266,7 @@ def format_mx_number(nir, local_number):
     line = local_number[-4:]
     normphone['urban'] = serie
     normphone['line'] =  line
-    normphone['type'] = '0'
+    normphone['type'] = 0
 
     listCodes = NumGeoMx.objects.filter(nir=nir,serie=serie,numeracion_inicial__lte=line, numeracion_final__gte=line)
     if listCodes.exists():

@@ -73,7 +73,7 @@ def geo(request):
                 urbano = parse_number['urban']
                 linea = parse_number['line']
                 local_number = parse_number['urban'] + parse_number['line']
-                is_posible = True if number_type != PhoneNumberType.UNKNOWN else False
+                is_possible = True if number_type != PhoneNumberType.UNKNOWN else False
                 dial_number = phonenumbers.format_number(phonenumbers.parse('+' + country_code + national_number, None), phonenumbers.PhoneNumberFormat.E164)
 
             else:
@@ -87,7 +87,7 @@ def geo(request):
                 country = geocoder.country_name_for_number(parse_number, 'EN')
                 country_iata = region_code_for_number(parse_number)
                 tmpcarrier = carrier.name_for_valid_number(parse_number, 'EN')
-                is_posible = phonenumbers.is_possible_number(parse_number)
+                is_possible = phonenumbers.is_possible_number(parse_number)
                 urbano = ''
                 linea = ''
                 mobile_code = ''
@@ -115,7 +115,7 @@ def geo(request):
                     linea = parse_mx_number['line']
                     number_type = parse_mx_number['type']
 
-            if is_posible:
+            if is_possible:
                 res = {
                     'is_valid': is_valid,
                     'location': location,
@@ -126,7 +126,7 @@ def geo(request):
                     'dial_number': dial_number,
                     'urban': urbano,
                     'line': linea,
-                    'is_posible': is_posible,
+                    'is_possible': is_possible,
                     'ori_number': number,
                     'number_data': {
                         'CC': country_code,

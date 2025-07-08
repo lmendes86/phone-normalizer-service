@@ -1,4 +1,4 @@
-FROM python:slim-buster
+FROM python:3.12-slim
 
 MAINTAINER lmendes86 "lucasam86@gmail.com"
 WORKDIR /app

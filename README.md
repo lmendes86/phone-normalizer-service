@@ -3,6 +3,11 @@ phone-normalizer-service
 
 Phone Normalizer Service is a Django based service which receive phone numbers in many formats
 and convert them in standardize international format.
+
+Requirements
+------------
+- Python 3.12 or newer
+- Django 5.2
 It also gives extra information such as:
 * Number validation
 * country name and IATA code

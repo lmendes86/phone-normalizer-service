@@ -13,7 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
+from django.urls import re_path, include
 # from django.contrib import admin
 from django.conf import settings
 
@@ -21,5 +21,5 @@ from normalizer import urls as normalizer_urls
 
 urlpatterns = [
     # url(r'^'+settings.URLS_PREFIX+'admin/', admin.site.urls),
-    url(r'^'+settings.URLS_PREFIX+'normalization/', include(normalizer_urls)),
+    re_path(r'^' + settings.URLS_PREFIX + 'normalization/', include(normalizer_urls)),
 ]

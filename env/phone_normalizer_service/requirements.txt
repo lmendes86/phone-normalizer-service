@@ -1,5 +1,5 @@
-Django==2.2.12
-django-import-export==2.0.2
-phonenumbers==8.12.1
-pytz==2019.3
-uWSGI==2.0.18
+Django==5.2.4
+django-import-export==4.3.8
+phonenumbers==9.0.9
+pytz==2025.2
+uWSGI==2.0.30
